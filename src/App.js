@@ -13,8 +13,7 @@ function App() {
     const bootcamperNumber= bootcamperNames.bootcampers.length
     const randomIndex = Math.floor(Math.random()*bootcamperNumber)
     setBootcamperIndex(randomIndex)
-    // const bootcamperMember = bootcamperNames.bootcampers[bootcamperIndex]
-    // return bootcamperMember;
+    
   }
 
   const [count, setCount] =useState(0);
@@ -27,7 +26,7 @@ function App() {
       <h1>React useState</h1>
       <button onClick= {addCount}>Increase Count</button>
       <h2>{count}</h2>
-      <p>{bootcamperIndex}</p>
+      <p>{bootcamperNames.bootcampers[bootcamperIndex]}</p>
       <button onClick = {handleClick}>Click me for a random bootcamper!</button>
     </div>
   );
